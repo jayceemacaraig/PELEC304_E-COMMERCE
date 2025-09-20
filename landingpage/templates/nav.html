@@ -1,6 +1,7 @@
  <nav class="flex fixed w-full justify-between items-center h-15 px-30 bg-white z-100 shadow-md">
         <!-- LOGO -->
-        <img src="../../media/static/logo.png" alt="LOGO" class="h-10 w-25">
+         {% load static%}
+        <img src="{% static 'images/logo.png' %}" alt="LOGO" class="h-10 w-25">
 
         <!-- NAV -->
         <div class="flex gap-10">
