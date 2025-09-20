@@ -1,4 +1,4 @@
-<section class="flex flex-col items-center my-50">
+<section class="flex flex-col items-center py-50 bg-gray-200">
     <div>
         <div class="flex flex-col items-left ">
             <h1 class="text-4xl font-bold ">FEATURED COLLECTIONS</h1>
@@ -6,23 +6,23 @@
         </div>
     
         <div class="flex gap-5">
-            <div class="h-105 w-200 bg-white p-10 flex flex-col justify-end bg-[url('../../media/sample.png')] bg-cover bg-no-repeat bg-center">
-                <h1 class="text-4xl text-white">ITEM NAME</h1>
-                <p class="text-md text-white">Short Description</p>
-                <h1 class="text-red-600">PRICE</h1>
+            <div class="h-155 w-200 bg-white p-10 flex flex-col justify-end bg-[url('{{ new_releases.0.image.url }}')] bg-cover bg-no-repeat bg-center rounded-md">
+                <h1 class="text-4xl text-white font-bold">{{ new_releases.0.item_name }}</h1>
+                <p class="text-md text-white">{{ new_releases.0.description }}</p>
+                <h1 class="text-orange-400 font-bold">₱{{ new_releases.0.price }}</h1>
             </div>
+
             <div class="flex flex-col gap-5">
-                <div class="h-50 w-100 bg-white p-5 flex flex-col justify-end bg-[url('../../media/sample.png')] bg-cover bg-no-repeat bg-center">
-                    <h1 class="text-2xl text-white">ITEM NAME</h1>
-                    <p class="text-sm  text-white">Short Description</p>
-                    <h1 class="text-red-600 text-sm">PRICE</h1>
+                <div class="h-75 w-100 bg-white p-5 flex flex-col justify-end bg-[url('{{ new_releases.1.image.url }}')] bg-cover bg-no-repeat bg-bottom rounded-md">
+                    <h1 class="text-2xl text-white font-bold">{{ new_releases.1.item_name }}</h1>
+                    <p class="text-sm  text-white">{{ new_releases.1.description }}</p>
+                    <h1 class="text-orange-400 text-sm font-bold">₱{{ new_releases.1.price }}</h1>
                 </div>
-                <div class="h-50 w-100 bg-white p-5 flex flex-col justify-end bg-[url('../../media/sample.png')] bg-cover bg-no-repeat bg-center">
-                    <h1 class="text-2xl text-white">ITEM NAME</h1>
-                    <p class="text-sm  text-white">Short Description</p>
-                    <h1 class="text-red-600 text-sm">PRICE</h1>
+                <div class="h-75 w-100 bg-white p-5 flex flex-col justify-end bg-[url('{{ new_releases.2.image.url }}')] bg-cover bg-no-repeat bg-bottom rounded-md">
+                    <h1 class="text-2xl text-white font-bold">{{ new_releases.2.item_name }}</h1>
+                    <p class="text-sm  text-white">{{ new_releases.2.description }}</p>
+                    <h1 class="text-orange-400 text-sm font-bold">₱{{ new_releases.2.price }}</h1>
                 </div>
-    
             </div>
         </div>
     </div>
